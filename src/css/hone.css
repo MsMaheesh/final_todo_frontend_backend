@@ -1,0 +1,68 @@
+.home h1 {
+    color: #556b2f; /* Dark Olive Green */
+    font-size: 36px;
+    margin-bottom: 10px;
+    padding: 10px;
+    
+}
+.todo-info {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    
+}
+
+.todo-info h2 {
+    color: #556b2f; /* Dark Olive Green */
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.todo-info p {
+    color: #556b2f; /* Dark Olive Green */
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.todo-info ul {
+    color: #556b2f; /* Dark Olive Green */
+    list-style-type: square;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.todo-info li {
+    margin-bottom: 10px;
+}
+.todo-info li::before {
+    content: "•"; /* Bullet point */
+    color: #f5f5dc; /* Dark Olive Green */
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.todo-info li:last-child {
+    margin-bottom: 0; /* Remove margin for the last list item */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .cl {
+       display: flex;
+       flex-direction: column;
+       gap: 100px;
+    }
+    .todo-info {
+        padding: 15px;
+    }
+
+    .todo-info h2 {
+        font-size: 20px;
+    }
+
+    .todo-info p {
+        font-size: 14px;
+    }
+}

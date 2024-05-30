@@ -1,0 +1,98 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #556b2f; /* Dark Gray for the nav bar */
+    padding: 10px 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 1000;
+}
+
+.nav1{
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+} 
+.nav2 {
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.link {
+    color: #f5f5dc; /* White for the link text */
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.link:last-child {
+    margin-right: 0;
+}
+
+.link:hover {
+    color: #a9ba9d; /* Green for the hover effect */
+}
+
+/* Add padding to the top of the body to avoid content being hidden under the fixed nav bar */
+body::before {
+    content: "";
+    display: block;
+    height: 60px; /* Adjust based on the height of the nav bar */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .nav1, .nav2 {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .link {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    body::before {
+        height: 80px; /* Adjust based on the height of the nav bar in mobile view */
+    }
+}
+/* .nav{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 10px;
+    position: fixed; 
+    width: 100%;
+    z-index: 9;
+    background-color:#E9ECEF;
+
+}
+
+.nav .nav2{
+   
+    display: flex;
+    flex-direction: row;
+    gap: 20px; 
+} 
+.link{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #495057;
+} */

@@ -1,0 +1,138 @@
+.registersection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #dcd0c0;
+}
+
+.registeritems {
+    background-color: #f5f5dc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.registertitle {
+    font-size: 24px;
+    font-weight: bold;
+    color:   #556b2f;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.registeritem {
+    margin-bottom: 15px;
+}
+
+.registerinputs {
+    width: 100%;
+    padding: 10px;
+    border:  1.5px solid #556b2f;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f5f5dc; /* Creamy White */
+    color: #556b2f; /* Dark Olive Green */
+}
+
+.registerinputs::placeholder {
+    color: #556b2f;
+}
+
+.registerbutton {
+    width: 100%;
+    padding: 10px;
+    background-color: #808000;
+    color: #f5f5dc;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.registerbutton:disabled {
+    background-color: #a9ba9d; /* Light Olive Green */
+    cursor: not-allowed;
+}
+
+.registerbutton:hover:not(:disabled) {
+    background-color: #556b2f; /* Dark Olive Green */
+}
+/* .registerbutton:hover {
+    background-color: #218838;
+} */
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .registersection {
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .registersection {
+        padding: 0 40px;
+    }
+
+    .registeritems {
+        width: 50%;
+        max-width: 500px;
+    }
+
+    .registertitle {
+        font-size: 28px;
+    }
+
+    .registerinputs {
+        padding: 12px;
+    }
+
+    .registerbutton {
+        padding: 12px;
+        font-size: 18px;
+    }
+}
+/* .registersection{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid red;
+    width: 400px;
+    height: auto;
+}
+.registeritems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.registertitle{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color:#FFC107;
+}
+.registeritem{
+    width:150px;
+    height:40px;
+}
+.registerinputs{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+.registerbutton{
+    width: 60px;
+    height: 30px;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: #17A2B8;
+    color: #FFC107;
+} */
